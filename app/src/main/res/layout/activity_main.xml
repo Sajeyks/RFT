@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/user_status"
-        android:text="Signed in."
+        android:text="@string/signed_in"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/tv_user_id"
         android:layout_marginTop="64dp"
-        android:text="Signed in."
+        android:text=""
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/tv_user_email"
         android:layout_marginTop="30dp"
-        android:text="Signed in."
+        android:text=""
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,12 +46,28 @@
         android:layout_margin="16dp"
         android:id="@+id/btn_logout"
         android:radius="20dp"
-        android:text="LOGOUT"
+        android:text="@string/logout"
         app:layout_constraintTop_toBottomOf="@id/tv_user_email"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
 
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/floatingActionButton"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="312dp"-->
+<!--        android:layout_marginEnd="43dp"-->
+<!--        app:borderWidth="0dp"-->
+<!--        app:backgroundTint="@color/pink1"-->
+<!--        app:tint="@color/white"-->
+<!--        android:layout_marginBottom="66dp"-->
+<!--        android:clickable="true"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:srcCompat="@android:drawable/ic_input_add" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

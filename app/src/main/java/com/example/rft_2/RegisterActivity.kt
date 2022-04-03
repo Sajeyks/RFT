@@ -29,14 +29,14 @@ class RegisterActivity : AppCompatActivity() {
                     Toast.makeText(
                         this@RegisterActivity,
                         "Please enter Email.",
-                        Toast.LENGTH_SHORT
+                        LENGTH_SHORT
                     ).show()
                 }
                 TextUtils.isEmpty(register_password.text.toString().trim{it <= ' '}) ->{
                     Toast.makeText(
                         this@RegisterActivity,
                         "Please enter Password.",
-                        Toast.LENGTH_SHORT
+                        LENGTH_SHORT
                     ).show()
             }
                 else -> {
@@ -46,7 +46,7 @@ class RegisterActivity : AppCompatActivity() {
                     // Firebase stuff
                     FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener {  task ->
-7
+
                                 //Success
                                 if (task.isSuccessful) {
                                     // Firebase Reg user
@@ -55,11 +55,11 @@ class RegisterActivity : AppCompatActivity() {
                                     Toast.makeText(
                                         this@RegisterActivity,
                                         "Successfully Registered.",
-                                        Toast.LENGTH_SHORT
+                                        LENGTH_SHORT
                                     ).show()
 
                                     val intent =
-                                        Intent(this@RegisterActivity, MainActivity::class.java)
+                                        Intent(this@RegisterActivity, HomeActivity::class.java)
                                     intent.flags =
                                         Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                                     intent.putExtra("user_id", firebaseUser.uid)
@@ -72,7 +72,7 @@ class RegisterActivity : AppCompatActivity() {
                                     Toast.makeText(
                                         this@RegisterActivity,
                                         task.exception.toString(),
-                                        Toast.LENGTH_SHORT
+                                        LENGTH_SHORT
                                     ).show()
 
                                 }

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="8dp"
+    tools:context=".ui.profile.ProfileFragment">
+
+
+    <TextView
+        android:id="@+id/textViewProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/profile"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35sp"/>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="2">
+        <ImageView
+            android:id="@+id/imageViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_baseline_account_circle_24"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="1dp"
+            android:text="name"
+            android:textSize="25sp"/>
+        <Button
+            android:id="@+id/buttonEditName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profile_name_textView"
+            android:drawableRight="@drawable/ic_baseline_edit_24"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="buttonClickedEditName"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:weightSum="2">
+        <ImageView
+            android:id="@+id/imageViewPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_baseline_dialpad_24"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/tv_till"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="1dp"
+            android:text="Till"
+            android:textSize="25sp"/>
+        <Button
+            android:id="@+id/buttonEditTillNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profile_name_textView"
+            android:drawableRight="@drawable/ic_baseline_edit_24"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="buttonClickedEditPhoneNo"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:weightSum="2">
+        <ImageView
+            android:id="@+id/imageViewMail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_baseline_email_24"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="377dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginStart="4dp"
+            android:text="Email"
+            android:textSize="25sp"/>
+    </TableRow>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:text="Logout"
+        android:layout_gravity="center"
+        />
+
+
+
+</LinearLayout>

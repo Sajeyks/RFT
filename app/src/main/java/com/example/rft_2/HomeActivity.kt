@@ -9,6 +9,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.rft_2.databinding.ActivityHomeBinding
+import com.example.rft_2.ui.event.CreateEventActivity
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.fragment_home.*
 
@@ -29,7 +30,7 @@ class HomeActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
+                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications, R.id.navigation_profile
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -40,6 +41,15 @@ class HomeActivity : AppCompatActivity() {
         floatingActionButton.setOnClickListener{
             startActivity(Intent(this@HomeActivity, CreateEventActivity::class.java))
         }
+
+        navController.addOnDestinationChangedListener { controller, destination, arguments ->
+            if (destination.id == R.id.navigation_home) {
+                supportActionBar?.hide()
+            } else {
+                supportActionBar?.show()
+            }
+        }
+
 
     }
 

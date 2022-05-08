@@ -6,4 +6,15 @@
     <string name="title_notifications">Notifications</string>
     <string name="signed_in">Signed in</string>
     <string name="logout">LOGOUT</string>
+    <string name="start_time">Starts from : </string>
+    <string name="profile">Profile</string>
+
+    <string-array name="timeOptions">
+        <item>Select Time</item>
+        <item>Morning</item>
+        <item>Noon</item>
+        <item>Afternoon</item>
+        <item>Evening</item>
+    </string-array>
+
 </resources>

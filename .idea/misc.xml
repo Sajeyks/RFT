@@ -4,16 +4,42 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21041666666666667" />
+        <entry key="app/src/main/res/drawable/circularprogressbar.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/edit_text_bottom_border.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_event_24.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_event_note_24.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_fact_check_24.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_label_24.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_local_offer_24.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_monetization_on_24.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_payment_24.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_receipt_24.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.20885416666666667" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.21041666666666667" />
-        <entry key="app/src/main/res/layout/activity_create_event.xml" value="0.2967382657120127" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/drawable/ic_profile_black.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/drawable/rounded_fg.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/layout/activity_create_event.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_create_profile.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_edit_event_details.xml" value="0.19270833333333334" />
+        <entry key="app/src/main/res/layout/activity_event_detail.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_get_location.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.19427083333333334" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.19427083333333334" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.19427083333333334" />
-        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/item_list.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/spinner_item.xml" value="0.19427083333333334" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.22" />
       </map>
     </option>
   </component>

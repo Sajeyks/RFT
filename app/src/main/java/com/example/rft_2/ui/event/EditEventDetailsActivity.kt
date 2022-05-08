@@ -48,6 +48,8 @@ class EditEventDetailsActivity : AppCompatActivity() {
     private var eventPoster: String = ""
     private var eventId: String = ""
 
+    private var eventattendees : HashMap<String, Any> = HashMap()
+
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -73,7 +75,9 @@ class EditEventDetailsActivity : AppCompatActivity() {
         val eventSummary = eventIntent.getStringExtra("summary")
         val eventVenue = eventIntent.getStringExtra("venue")
 
-            /** call the texts & image **/
+        eventattendees = eventIntent.getSerializableExtra("attendees") as HashMap<String, Any>
+
+        /** call the texts & image **/
         et_event_name_edit.setText(eventName)
         Picasso.with(this).load(eventPoster.toString()).into(event_poster_edit)
         event_ticket_price_edit.setText(eventTicketPrice.toString())
@@ -261,11 +265,10 @@ class EditEventDetailsActivity : AppCompatActivity() {
         val eventSummary = event_summary_edit.text.toString()
         val eventAvailableTickets = event_available_tickets_edit.text.toString().toInt()
         val eventVenue = event_venue_edit.text.toString()
-        val eventAttendees = mutableMapOf<String, Any>()
 
         val event = MyEvent(
             eventId ,eventOrganizer, eventName, posterURL, eventDate, eventStartTime,
-            eventFinishingTime, eventTicketPrice, eventSummary, eventVenue,eventAvailableTickets, eventAttendees
+            eventFinishingTime, eventTicketPrice, eventSummary, eventVenue,eventAvailableTickets, eventattendees
         )
 
         myRef.child(eventId!!).setValue(event).addOnSuccessListener {

@@ -96,12 +96,13 @@ class EventDetailActivity : AppCompatActivity() {
             mIntent.putExtra("poster", eventPoster)
             mIntent.putExtra("summary", eventSummary)
             mIntent.putExtra("venue", eventVenue)
+            mIntent.putExtra("attendees", eventattendees)
 
             startActivity(mIntent)
         }
 
         val myRefAtendees = database.getReference("Events").child(eventId!!).child("eventAttendees")
-        val attendees : MutableMap<String, Any> = mutableMapOf()
+        val attendees : MutableMap<String, Any> = eventattendees
         if (email != null) {
             attendees[user!!.uid] = true
         }
